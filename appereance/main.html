@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tyanochka_searching</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" >
+ <style>
+   body{
+     font-size: 15px;
+     width: 250px;
+     height: 250px;
+     background-image: url(background.jpg);
+     background-repeat: no-repeat;
+     background-size: 270px 270px ;
+    
+   }
+   .container{
+     margin-top: 50px;
+   }
+   header{
+     text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   }
+   input{
+     
+     position: relative;
+     top:-20px;
+     width: 97%;
+     height: 23px;
+     border-radius: 15px;
+     outline:none;
+     margin-top:5px ;
+     margin-bottom:5px ;
+   }
+   
+   p{
+    
+     text-align: center;
+   }
+   
+   .button a{
+     position: relative;
+     bottom: 20px;
+      background-color: black;
+      height: 23px;
+      width: 150px;
+      color:white;
+      margin: 20px auto;
+      border-radius: 15px;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      color:white;
+      
+   }
+   .galka{
+     position: relative;
+     left:200px ;
+     top:-112px;
+     margin-bottom: 17px;
+     width: 20px;
+     
+   }
+   .unclickable{
+    pointer-events:none;
+    opacity:50%
+    }
+
+    .mint_input{
+    width:150px;
+    position: relative;
+    bottom: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    height: 23px;
+  
+ }
+  
+ .galka_mint{
+  position: relative;
+  left:210px ;
+  top:-70px;
+  margin-bottom: 17px;
+  width: 20px;
+ }
+  
+ </style>
+</head>
+<body>
+
+  <header class = "header">
+  NFT EXTENSION
+  </header>
+  <div class="container"> 
+  <div class="button">
+    <div class="atomic">
+      <a href="#">
+        ATOMICHUB
+      </a>
+    </div>
+    <div class="binance">
+
+      <a href="#">
+        BINANCE
+      </a>
+    </div>
+    <div class="mint">
+
+      <input class="mint_input" type="text" placeholder = "вв-ди киворды" >
+      <input class = "galka_mint" type="checkbox" >
+      <a href="#" class = "save">
+        save
+      </a>
+    </div>
+    
+
+  </div>
+  <!--<input type="text" placeholder="номер блока" id='positive_words' class='positive_words'>  -->
+   
+    
+  </div>
+   <script  src = "popup.js"></script>
+
+
+</body>
+</html>

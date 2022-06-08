@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>auth</button>
+    <script>
+        const input = document.querySelector('input')
+        const auth = document.querySelector('button')
+        let key = JSON.stringify({key: input.value});
+        auth.addEventListener('click',(e)=>{
+            $.ajax({
+                url:"/auth",
+                type:"POST",
+                dataType:"json",
+                contentType:"application/json",
+                data:key,
+                credentials: 'include',
+                success: (function (response) {
+                    if(!response.logged){
+                        var warning = 'вы ввели неправильный логин или пароль'
+                        document.body.append(warning)
+                    }
+                
+            }),
+   
+       
+    })
+        })
+    </script>
+</body>
+</html>
